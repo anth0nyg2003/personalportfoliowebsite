@@ -534,8 +534,24 @@ body.dark-mode .project-img {
 
 /* Adjust icons in dark mode */
 body.dark-mode .icon {
-  filter: invert(1) hue-rotate(180deg); /* Inverts colors for icons */
-  transition: filter 0.3s ease;
+  filter: invert(1); /* Inverts colors for icons */
+}
+
+/* Ensure education.png and "Education" text are visible in dark mode */
+body.dark-mode .education-img {
+  filter: brightness(1); /* Ensure the image is fully visible */
+}
+
+body.dark-mode .experience-text {
+  color: rgb(53, 53, 53); /* Set text color to white for visibility */
+}
+
+body.dark-mode .experience-img {
+  filter: brightness(1); /* Ensure the image is fully visible */
+}
+
+body.dark-mode .education-text {
+  color: rgb(53, 53, 53); /* Set text color to white for visibility */
 }
 
 body.dark-mode {
